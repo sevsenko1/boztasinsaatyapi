@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Anahtar teslim inşaat, çelik çatı, tadilat tamirat, elektrik ve su tesisatı Uzundere ve Tortum bölgelerinde uzman ekip ile hizmet.">
     <title>Boztaş İnşaat Yapı | Uzundere & Tortum İnşaat Hizmetleri</title>
+
+    <!-- Favicon (isteğe göre daha sonra eklenecek) -->
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -91,6 +93,24 @@
         .gallery-item:nth-child(7) { animation-delay: 0.7s; }
         .gallery-item:nth-child(8) { animation-delay: 0.8s; }
         .gallery-item:nth-child(9) { animation-delay: 0.9s; }
+
+        .gallery-scroll {
+            scrollbar-width: thin;
+            scrollbar-color: #F2C14E #2a2a2a;
+        }
+
+        .gallery-scroll::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .gallery-scroll::-webkit-scrollbar-track {
+            background: #2a2a2a;
+        }
+
+        .gallery-scroll::-webkit-scrollbar-thumb {
+            background-color: #F2C14E;
+            border-radius: 9999px;
+        }
         
         .btn-primary {
             transition: all 0.3s ease;
@@ -209,8 +229,8 @@
                 <a href="#iletisim" class="btn-primary bg-gold text-dark px-8 py-4 rounded-lg font-semibold text-lg">
                     Bizden Fiyat Almadan Karar Vermeyin
                 </a>
-                <a href="tel:+905551234567" class="btn-primary bg-transparent border-2 border-gold text-gold px-8 py-4 rounded-lg font-semibold text-lg">
-                    Hemen Arayın: +90 XXX XXX XX XX
+                <a href="tel:+905349458130" class="btn-primary bg-transparent border-2 border-gold text-gold px-8 py-4 rounded-lg font-semibold text-lg">
+                    Hemen Arayın: Hakkı Boztaş – 0534 945 81 30
                 </a>
             </div>
         </div>
@@ -336,70 +356,190 @@
                 <button class="filter-btn px-6 py-2 bg-dark/50 border border-gold/20 text-gold rounded-lg font-semibold" data-filter="tadilat">Tadilat & Tamirat</button>
             </div>
             
-            <!-- Gallery Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Gallery Items - Placeholder images from Unsplash -->
-                <div class="gallery-item cursor-pointer" data-category="insaat">
-                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                         alt="İnşaat Projesi" 
-                         class="w-full h-64 object-cover rounded-lg"
-                         loading="lazy">
-                </div>
-                
-                <div class="gallery-item cursor-pointer" data-category="catı">
-                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                         alt="Çatı İşi" 
-                         class="w-full h-64 object-cover rounded-lg"
-                         loading="lazy">
-                </div>
-                
-                <div class="gallery-item cursor-pointer" data-category="tadilat">
-                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                         alt="Tadilat İşi" 
-                         class="w-full h-64 object-cover rounded-lg"
-                         loading="lazy">
-                </div>
-                
-                <div class="gallery-item cursor-pointer" data-category="insaat">
-                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                         alt="İnşaat Projesi" 
-                         class="w-full h-64 object-cover rounded-lg"
-                         loading="lazy">
-                </div>
-                
-                <div class="gallery-item cursor-pointer" data-category="catı">
-                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                         alt="Çatı İşi" 
-                         class="w-full h-64 object-cover rounded-lg"
-                         loading="lazy">
-                </div>
-                
-                <div class="gallery-item cursor-pointer" data-category="tadilat">
-                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                         alt="Tadilat İşi" 
-                         class="w-full h-64 object-cover rounded-lg"
-                         loading="lazy">
-                </div>
-                
-                <div class="gallery-item cursor-pointer" data-category="insaat">
-                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                         alt="İnşaat Projesi" 
-                         class="w-full h-64 object-cover rounded-lg"
-                         loading="lazy">
-                </div>
-                
-                <div class="gallery-item cursor-pointer" data-category="catı">
-                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                         alt="Çatı İşi" 
-                         class="w-full h-64 object-cover rounded-lg"
-                         loading="lazy">
-                </div>
-                
-                <div class="gallery-item cursor-pointer" data-category="tadilat">
-                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                         alt="Tadilat İşi" 
-                         class="w-full h-64 object-cover rounded-lg"
-                         loading="lazy">
+            <!-- Gallery Grid (Scrollable, 29 images, responsive) -->
+            <div class="gallery-scroll max-h-[900px] md:max-h-[650px] overflow-y-auto pr-1">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Çatı İşleri -->
+                    <div class="gallery-item cursor-pointer" data-category="catı">
+                        <img src="img/cati1.jpeg"
+                             alt="Çatı Projesi 1"
+                             class="w-full h-64 object-cover rounded-lg"
+                             loading="lazy">
+                    </div>
+                    <div class="gallery-item cursor-pointer" data-category="catı">
+                        <img src="img/cati2.jpeg"
+                             alt="Çatı Projesi 2"
+                             class="w-full h-64 object-cover rounded-lg"
+                             loading="lazy">
+                    </div>
+                    <div class="gallery-item cursor-pointer" data-category="catı">
+                        <img src="img/cati3.jpeg"
+                             alt="Çatı Projesi 3"
+                             class="w-full h-64 object-cover rounded-lg"
+                             loading="lazy">
+                    </div>
+                    <div class="gallery-item cursor-pointer" data-category="catı">
+                        <img src="img/cati4.jpeg"
+                             alt="Çatı Projesi 4"
+                             class="w-full h-64 object-cover rounded-lg"
+                             loading="lazy">
+                    </div>
+                    <div class="gallery-item cursor-pointer" data-category="catı">
+                        <img src="img/cati5.jpeg"
+                             alt="Çatı Projesi 5"
+                             class="w-full h-64 object-cover rounded-lg"
+                             loading="lazy">
+                    </div>
+                    <div class="gallery-item cursor-pointer" data-category="catı">
+                        <img src="img/cati6.jpeg"
+                             alt="Çatı Projesi 6"
+                             class="w-full h-64 object-cover rounded-lg"
+                             loading="lazy">
+                    </div>
+                    <div class="gallery-item cursor-pointer" data-category="catı">
+                        <img src="img/cati7.jpeg"
+                             alt="Çatı Projesi 7"
+                             class="w-full h-64 object-cover rounded-lg"
+                             loading="lazy">
+                    </div>
+                    <div class="gallery-item cursor-pointer" data-category="catı">
+                        <img src="img/cati8.jpeg"
+                             alt="Çatı Projesi 8"
+                             class="w-full h-64 object-cover rounded-lg"
+                             loading="lazy">
+                    </div>
+                    <div class="gallery-item cursor-pointer" data-category="catı">
+                        <img src="img/cati9.jpeg"
+                             alt="Çatı Projesi 9"
+                             class="w-full h-64 object-cover rounded-lg"
+                             loading="lazy">
+                    </div>
+
+                    <!-- Genel Projeler (Hepsi) -->
+                    <div class="gallery-item cursor-pointer" data-category="insaat">
+                        <img src="img/hepsi.jpeg"
+                             alt="Proje Genel Görünüm 1"
+                             class="w-full h-64 object-cover rounded-lg"
+                             loading="lazy">
+                    </div>
+                    <div class="gallery-item cursor-pointer" data-category="insaat">
+                        <img src="img/hepsi2.jpeg"
+                             alt="Proje Genel Görünüm 2"
+                             class="w-full h-64 object-cover rounded-lg"
+                             loading="lazy">
+                    </div>
+                    <div class="gallery-item cursor-pointer" data-category="insaat">
+                        <img src="img/hepsi3.jpeg"
+                             alt="Proje Genel Görünüm 3"
+                             class="w-full h-64 object-cover rounded-lg"
+                             loading="lazy">
+                    </div>
+
+                    <!-- Kalıp ve Taşıyıcı Sistemler -->
+                    <div class="gallery-item cursor-pointer" data-category="insaat">
+                        <img src="img/kalıp.jpeg"
+                             alt="Kalıp Çalışması"
+                             class="w-full h-64 object-cover rounded-lg"
+                             loading="lazy">
+                    </div>
+                    <div class="gallery-item cursor-pointer" data-category="insaat">
+                        <img src="img/kalıp1.jpeg"
+                             alt="Kalıp Çalışması 1"
+                             class="w-full h-64 object-cover rounded-lg"
+                             loading="lazy">
+                    </div>
+                    <div class="gallery-item cursor-pointer" data-category="insaat">
+                        <img src="img/kalıp2.jpeg"
+                             alt="Kalıp Çalışması 2"
+                             class="w-full h-64 object-cover rounded-lg"
+                             loading="lazy">
+                    </div>
+                    <div class="gallery-item cursor-pointer" data-category="insaat">
+                        <img src="img/kalıp3.jpeg"
+                             alt="Kalıp Çalışması 3"
+                             class="w-full h-64 object-cover rounded-lg"
+                             loading="lazy">
+                    </div>
+                    <div class="gallery-item cursor-pointer" data-category="insaat">
+                        <img src="img/kalıp4.jpeg"
+                             alt="Kalıp Çalışması 4"
+                             class="w-full h-64 object-cover rounded-lg"
+                             loading="lazy">
+                    </div>
+                    <div class="gallery-item cursor-pointer" data-category="insaat">
+                        <img src="img/kalıp5.jpeg"
+                             alt="Kalıp Çalışması 5"
+                             class="w-full h-64 object-cover rounded-lg"
+                             loading="lazy">
+                    </div>
+                    <div class="gallery-item cursor-pointer" data-category="insaat">
+                        <img src="img/kalıp6.jpeg"
+                             alt="Kalıp Çalışması 6"
+                             class="w-full h-64 object-cover rounded-lg"
+                             loading="lazy">
+                    </div>
+                    <div class="gallery-item cursor-pointer" data-category="insaat">
+                        <img src="img/kalıp7.jpeg"
+                             alt="Kalıp Çalışması 7"
+                             class="w-full h-64 object-cover rounded-lg"
+                             loading="lazy">
+                    </div>
+                    <div class="gallery-item cursor-pointer" data-category="insaat">
+                        <img src="img/kalıp8.jpeg"
+                             alt="Kalıp Çalışması 8"
+                             class="w-full h-64 object-cover rounded-lg"
+                             loading="lazy">
+                    </div>
+                    <div class="gallery-item cursor-pointer" data-category="insaat">
+                        <img src="img/kalıp10.jpeg"
+                             alt="Kalıp Çalışması 10"
+                             class="w-full h-64 object-cover rounded-lg"
+                             loading="lazy">
+                    </div>
+                    <div class="gallery-item cursor-pointer" data-category="insaat">
+                        <img src="img/kalıp11.jpeg"
+                             alt="Kalıp Çalışması 11"
+                             class="w-full h-64 object-cover rounded-lg"
+                             loading="lazy">
+                    </div>
+
+                    <!-- Temel Çalışmaları -->
+                    <div class="gallery-item cursor-pointer" data-category="insaat">
+                        <img src="img/temel.jpeg"
+                             alt="Temel Çalışması 1"
+                             class="w-full h-64 object-cover rounded-lg"
+                             loading="lazy">
+                    </div>
+                    <div class="gallery-item cursor-pointer" data-category="insaat">
+                        <img src="img/temel2.jpeg"
+                             alt="Temel Çalışması 2"
+                             class="w-full h-64 object-cover rounded-lg"
+                             loading="lazy">
+                    </div>
+                    <div class="gallery-item cursor-pointer" data-category="insaat">
+                        <img src="img/temel3.jpeg"
+                             alt="Temel Çalışması 3"
+                             class="w-full h-64 object-cover rounded-lg"
+                             loading="lazy">
+                    </div>
+                    <div class="gallery-item cursor-pointer" data-category="insaat">
+                        <img src="img/temel4.jpeg"
+                             alt="Temel Çalışması 4"
+                             class="w-full h-64 object-cover rounded-lg"
+                             loading="lazy">
+                    </div>
+                    <div class="gallery-item cursor-pointer" data-category="insaat">
+                        <img src="img/temel5.jpeg"
+                             alt="Temel Çalışması 5"
+                             class="w-full h-64 object-cover rounded-lg"
+                             loading="lazy">
+                    </div>
+                    <div class="gallery-item cursor-pointer" data-category="insaat">
+                        <img src="img/temel6.jpeg"
+                             alt="Temel Çalışması 6"
+                             class="w-full h-64 object-cover rounded-lg"
+                             loading="lazy">
+                    </div>
                 </div>
             </div>
         </div>
@@ -415,12 +555,12 @@
                     <p class="text-xl mb-6 text-gray-300">
                         Uzundere ve Tortum'da inşaat hizmeti için bizimle iletişime geçin.
                     </p>
-                    <a href="tel:+905551234567" class="text-2xl md:text-3xl font-bold text-gold hover:underline block mb-6">
-                        Hemen Ara: +90 XXX XXX XX XX
+                    <a href="tel:+905349458130" class="text-2xl md:text-3xl font-bold text-gold hover:underline block mb-6">
+                        Hakkı Boztaş – 0534 945 81 30
                     </a>
                     
                     <!-- WhatsApp Button -->
-                    <a href="https://wa.me/905551234567" 
+                    <a href="https://wa.me/905349458130" 
                        target="_blank" 
                        class="inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all hover:scale-105">
                         <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -433,7 +573,7 @@
                 <!-- Google Maps Embed -->
                 <div class="mt-12 rounded-lg overflow-hidden shadow-lg">
                     <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.5!2d41.5!3d40.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDMwJzAwLjAiTiA0McKwMzAnMDAuMCJF!5e0!3m2!1str!2str!4v1234567890" 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3049.567975939892!2d41.5505!3d40.4805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406f8c4d9d2b1b2f%3A0x0000000000000000!2sCevizli%2C%20Uzundere%2FErzurum!5e0!3m2!1str!2str!4v1708771200" 
                         width="100%" 
                         height="400" 
                         style="border:0;" 
@@ -454,8 +594,8 @@
                 © 2024 Boztaş İnşaat Yapı – Tüm Hakları Saklıdır
             </p>
             <div class="flex flex-col md:flex-row justify-center items-center gap-6 text-gray-400">
-                <a href="tel:+905551234567" class="hover:text-gold transition-colors">Telefon: +90 XXX XXX XX XX</a>
-                <a href="https://wa.me/905551234567" target="_blank" class="hover:text-gold transition-colors">WhatsApp</a>
+                <a href="tel:+905349458130" class="hover:text-gold transition-colors">Telefon: Hakkı Boztaş – 0534 945 81 30</a>
+                <a href="https://wa.me/905349458130" target="_blank" class="hover:text-gold transition-colors">WhatsApp</a>
                 <span>Uzundere / Tortum, Erzurum</span>
             </div>
         </div>
